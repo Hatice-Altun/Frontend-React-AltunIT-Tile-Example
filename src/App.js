@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Tile from "./components/Tile";
+import brand from "./assets/brand.png";
+import our_story from "./assets/our_story.png";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Tile title="The brand">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid culpa dolorum enim excepturi, fuga pariatur praesentium quia sequi similique sunt.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid culpa dolorum enim excepturi, fuga pariatur praesentium quia sequi similique sunt.</p>
+      </Tile>
+      <Tile img={brand} imgDescription="The brand logo" />
+      <Tile img={our_story} imgDescription="The designers" />
+      <Tile title="Our story">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis eligendi exercitationem illo, labore laboriosam nihil omnis praesentium. Aspernatur cum deleniti excepturi itaque, laboriosam nisi rerum sunt. At repellendus tenetur veniam!</p>
+      </Tile>
     </div>
   );
 }
